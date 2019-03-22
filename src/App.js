@@ -6,6 +6,9 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+
+import linkedin from './assets/if_linkedin_social_media_3129285.png';
 
 import eye from './assets/eye_transBG.png';
 
@@ -30,6 +33,11 @@ class App extends Component {
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link href="#gallery">Gallery</Nav.Link>
+                    </Nav.Item>
+                </Nav>
+                <Nav>
+                    <Nav.Item>
+                        <Nav.Link href="#linkedin"><Image src={linkedin} className="SocialLinks"/></Nav.Link>
                     </Nav.Item>
                 </Nav>
             </Navbar>

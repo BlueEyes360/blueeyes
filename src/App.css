@@ -9,3 +9,7 @@
   background: radial-gradient(white 25%, black);
   border-radius: 50%;
 }
+
+.SocialLinks {
+  height: 3vh;
+}
