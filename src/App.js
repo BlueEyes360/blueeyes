@@ -7,6 +7,9 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
+
+import headshot from './assets/suit_background_blurred.png';
 
 class App extends Component {
     render() {
@@ -14,16 +17,44 @@ class App extends Component {
         <div className="App">
             <Navigation />
             <Container fluid>
-                <Row className="py-5">
-                    <Col xs={2}></Col>
-                    <Col xs={8}>
+                <Row>
+                    <Col>
                         <Jumbotron fluid>
-                            <p>This is some text inside of the jumbotron</p>
+                            <Container>
+                                <Row>
+                                    <Col xs={1}/>
+                                    <Col xs={10}>
+                                        <Image src={headshot} className="Headshot"/>
+                                    </Col>
+                                    <Col xs={1}/>
+                                </Row>
+                                <Row>
+                                    <Col xs={1}/>
+                                    <Col xs={10}>
+                                        <p className="NameLine">Robert "Bobby" Thompson</p>
+                                    </Col>
+                                    <Col xs={1}/>
+                                </Row>
+                                <Row>
+                                    <Col xs={1}/>
+                                    <Col xs={10}>
+                                        <p className="SubTitle">Senior at Washington State University</p>
+                                    </Col>
+                                    <Col xs={1}/>
+                                </Row>
+                                <Row>
+                                    <Col xs={1}/>
+                                    <Col xs={10}>
+                                        <p className="SubTitle">Vice President of Coding Cougs</p>
+                                    </Col>
+                                    <Col xs={1}/>
+                                </Row>
+                            </Container>
                         </Jumbotron>
                     </Col>
-                    <Col xs={2}></Col>
                 </Row>
             </Container>
+            
         </div>
         );
     }

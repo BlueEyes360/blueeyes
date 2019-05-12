@@ -31,21 +31,24 @@ const Navigation = (props) => {
                     <Nav.Link href="#aboutme">About Me</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
+                    <Nav.Link href="#resume">Resume</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
                     <Nav.Link href="#gallery">Gallery</Nav.Link>
                 </Nav.Item>
             </Nav>
             <Nav className="float-lg-right">
                 <Nav.Item>
-                    <Nav.Link href="#linkedin"><Image src={linkedin} className="SocialLinks"/></Nav.Link>
+                    <Nav.Link href="https://www.linkedin.com/in/rhthompson1/"><Image src={linkedin} className="SocialLinks"/></Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="#twitter"><Image src={twitter} className="SocialLinks"/></Nav.Link>
+                    <Nav.Link href="http://www.twitter.com/rhth1986"><Image src={twitter} className="SocialLinks"/></Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="#facebook"><Image src={facebook} className="SocialLinks"/></Nav.Link>
+                    <Nav.Link href="https://www.facebook.com/profile.php?id=100007442145159"><Image src={facebook} className="SocialLinks"/></Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                    <Nav.Link href="#github"><Image src={github} className="SocialLinks"/></Nav.Link>
+                    <Nav.Link href="https://www.github.com/BlueEyes360"><Image src={github} className="SocialLinks"/></Nav.Link>
                 </Nav.Item>
             </Nav>
         </Navbar>
