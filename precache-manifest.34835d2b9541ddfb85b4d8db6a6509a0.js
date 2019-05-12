@@ -4,6 +4,10 @@ self.__precacheManifest = [
     "url": "/static/media/what-the-hex.6633a16d.png"
   },
   {
+    "revision": "a8daf19f73febcb60da25265a22e9ce8",
+    "url": "/static/media/suit_background_blurred.a8daf19f.png"
+  },
+  {
     "revision": "6cd915b684b30e924a0bcdad8a28993c",
     "url": "/static/media/eye_transBG.6cd915b6.png"
   },
@@ -16,19 +20,19 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.a8a9905a.js"
   },
   {
-    "revision": "c2960a99dbb1817f5a94",
-    "url": "/static/js/main.8b4ceea9.chunk.js"
+    "revision": "41e82e2185a6687a6f27",
+    "url": "/static/js/main.62ab07e8.chunk.js"
   },
   {
-    "revision": "eab57c2aa190c04f93b0",
-    "url": "/static/js/2.3e50a5d9.chunk.js"
+    "revision": "ab7edd0bb96553f1ff0c",
+    "url": "/static/js/2.a10e221e.chunk.js"
   },
   {
-    "revision": "c2960a99dbb1817f5a94",
-    "url": "/static/css/main.5d0a6ec8.chunk.css"
+    "revision": "41e82e2185a6687a6f27",
+    "url": "/static/css/main.1e2a3fde.chunk.css"
   },
   {
-    "revision": "5f414e991f74c2ebdfc3bd0e8630eb97",
+    "revision": "22c976573530b0286cd19926cc238bbb",
     "url": "/index.html"
   }
 ];
