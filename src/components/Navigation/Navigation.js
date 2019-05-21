@@ -1,56 +1,63 @@
 import React from 'react';
 
 import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Image from 'react-bootstrap/Image';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownMenu from 'react-bootstrap/DropdownMenu';
+import DropdownItem from 'react-bootstrap/DropdownItem';
+import DropdownToggle from 'react-bootstrap/DropdownToggle';
 
-import linkedin from '../../assets/if_linkedin_social_media_3129285.png';
-import facebook from '../../assets/if_facebook_social_media_3129294.png';
-import github from '../../assets/Octocat.png';
-import twitter from '../../assets/if_twitter_social_media_3129254.png';
+import NavLink from 'react-router-dom/NavLink';
+
+import MediaQuery from 'react-responsive';
+
+import NavigationLinks from './NavigationLinks/NavigationLinks';
+import SocialLinks from './SocialLinks/SocialLinks';
 
 import eye from '../../assets/eye_transBG.png';
-
+import './Navigation.css';
 
 const Navigation = (props) => {
 
     return (
         <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home">
-            <img alt="" src={eye} width="30" height="30"
-                className="d-inline-block align-top"
-                id="brand"
-            />
-            {' blueeyes.dev'}
-            </Navbar.Brand>
-            <Nav className="mx-auto">
-                <Nav.Item>
-                    <Nav.Link href="#home">Home</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link href="#aboutme">About Me</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link href="#resume">Resume</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link href="#gallery">Gallery</Nav.Link>
-                </Nav.Item>
-            </Nav>
-            <Nav className="float-lg-right">
-                <Nav.Item>
-                    <Nav.Link href="https://www.linkedin.com/in/rhthompson1/"><Image src={linkedin} className="SocialLinks"/></Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link href="http://www.twitter.com/rhth1986"><Image src={twitter} className="SocialLinks"/></Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link href="https://www.facebook.com/profile.php?id=100007442145159"><Image src={facebook} className="SocialLinks"/></Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link href="https://www.github.com/BlueEyes360"><Image src={github} className="SocialLinks"/></Nav.Link>
-                </Nav.Item>
-            </Nav>
+            <MediaQuery query="(max-device-width: 500px)">
+                <Dropdown>
+                    <DropdownToggle variant="dark">Menu</DropdownToggle>
+                    <DropdownMenu left className="DropMenu">
+                        <DropdownItem>
+                            <NavLink exact to="/">Home</NavLink>
+                        </DropdownItem>
+                        <DropdownItem>
+                            <NavLink to="/resume">Resume</NavLink>
+                        </DropdownItem>
+                        <DropdownItem>
+                            <NavLink to="/gallery">Gallery</NavLink>
+                        </DropdownItem>
+                        <DropdownItem>
+                            <NavLink to="/projects">Projects</NavLink>
+                        </DropdownItem>
+                        <SocialLinks />
+                    </DropdownMenu>
+                </Dropdown>
+                <Navbar.Brand href="/" className="ml-auto">
+                    <img alt="" src={eye} width="30" height="30"
+                        className="d-inline-block align-top"
+                        id="brand"
+                    />
+                    {' blueeyes.dev'}
+                </Navbar.Brand>
+            </MediaQuery>
+            <MediaQuery query="(min-device-width: 500px)">
+                <Navbar.Brand href="/">
+                    <img alt="" src={eye} width="30" height="30"
+                        className="d-inline-block align-top"
+                        id="brand"
+                    />
+                    {' blueeyes.dev'}
+                </Navbar.Brand>
+                <NavigationLinks />
+                <SocialLinks />
+            </MediaQuery>
         </Navbar>
     )
 }

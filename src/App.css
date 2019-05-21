@@ -3,40 +3,10 @@
     text-align: center;
     background-image: url("assets/what-the-hex.png");
     background-repeat: repeat;
+    overflow: auto;
 }
 
 #brand {
     background: radial-gradient(white 25%, black);
     border-radius: 50%;
-}
-
-.SocialLinks {
-    height: 3vh;
-}
-
-.Headshot {
-    height: 20vh;
-    border-radius: 50%;
-}
-
-.NameBox {
-    background: lightgray;
-}
-
-p {
-    text-shadow: 0.25vmin 0.25vmin lightgray;
-    margin: 0.1vmin;
-}
-
-.NameLine {
-    font-size: 225%;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-style: bold;
-}
-
-.SubTitle {
-    font-size: 175%;
-    font-family: "Times New Roman", Times, serif;
-    font-style: italic;
-    color: gray;
 }

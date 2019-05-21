@@ -1,0 +1,59 @@
+.Headshot {
+    height: 20vh;
+    border-radius: 50%;
+}
+
+.NameBox {
+    background: lightgray;
+}
+
+p {
+    text-shadow: 0.25vmin 0.25vmin lightgray;
+    margin: 0.1vmin;
+}
+
+.NameLine {
+    font-size: 225%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-style: bold;
+}
+
+.SubTitle {
+    font-size: 175%;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    color: gray;
+}
+
+.NameLineMedium {
+    font-size: 200%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-style: bold;
+}
+
+.SubTitleMedium {
+    font-size: 150%;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    color: gray;
+}
+
+.NameLineSmall {
+    font-size: 125%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-style: bold;
+}
+
+.SubTitleSmall {
+    font-size: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    color: gray;
+}
+
+.AboutMe {
+    margin: 2vh 0;
+    font-style: oblique;
+    text-align: justify;
+    text-shadow: none;
+}

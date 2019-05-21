@@ -1,61 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import Navigation from './components/Navigation/Navigation';
-
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
-
-import headshot from './assets/suit_background_blurred.png';
+import Home from './components/Home/Home';
+import Resume from './components/Resume/Resume';
+import Gallery from './components/Gallery/Gallery';
+import Projects from './components/Projects/Projects';
 
 class App extends Component {
     render() {
         return (
-        <div className="App">
-            <Navigation />
-            <Container fluid>
-                <Row>
-                    <Col>
-                        <Jumbotron fluid>
-                            <Container>
-                                <Row>
-                                    <Col xs={1}/>
-                                    <Col xs={10}>
-                                        <Image src={headshot} className="Headshot"/>
-                                    </Col>
-                                    <Col xs={1}/>
-                                </Row>
-                                <Row>
-                                    <Col xs={1}/>
-                                    <Col xs={10}>
-                                        <p className="NameLine">Robert "Bobby" Thompson</p>
-                                    </Col>
-                                    <Col xs={1}/>
-                                </Row>
-                                <Row>
-                                    <Col xs={1}/>
-                                    <Col xs={10}>
-                                        <p className="SubTitle">Senior at Washington State University</p>
-                                    </Col>
-                                    <Col xs={1}/>
-                                </Row>
-                                <Row>
-                                    <Col xs={1}/>
-                                    <Col xs={10}>
-                                        <p className="SubTitle">Vice President of Coding Cougs</p>
-                                    </Col>
-                                    <Col xs={1}/>
-                                </Row>
-                            </Container>
-                        </Jumbotron>
-                    </Col>
-                </Row>
-            </Container>
-            
-        </div>
+        <BrowserRouter>
+            <div className="App">
+                <Navigation />
+                <Route path="/" exact component={Home} />
+                <Route path="/resume" component={Resume} />
+                <Route path="/gallery" component={Gallery} />
+                <Route path="/projects" component={Projects} />
+            </div>
+        </BrowserRouter>
         );
     }
 }
