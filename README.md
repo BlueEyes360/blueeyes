@@ -1,3 +1,5 @@
+This is a website deployed with GitHub Pages. Visit the website at [blueeyes.dev](https://blueeyes.dev).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
