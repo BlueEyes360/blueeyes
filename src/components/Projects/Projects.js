@@ -11,6 +11,8 @@ import recipezSnap from '../../assets/Recip-ezSnap.PNG';
 import prettypicturesSnap from '../../assets/pretty-pictures-snap.PNG';
 import DMPSSnap from '../../assets/DMPSSnap.png';
 import ELCLogo from '../../assets/ELCLogo.png';
+import EyeLogo from '../../assets/eye_transBG.png';
+import bthompsonSnap from '../../assets/bthompsonSnap.png';
 
 import './Projects.css';
 
@@ -108,32 +110,37 @@ const Projects = (props) => {
                     </Col>
                     <Col lg={4}>
                         <Card>
-                            <Card.Img variant="top" src={prettypicturesSnap}/>
+                            <Card.Img variant="top" src={EyeLogo}/>
                             <Card.Header>
                                 <p className="ProjectsCardHeader">
-                                    <b>Placeholder Text</b>
+                                    <b>Developer and Administrator</b>
                                 </p>
                             </Card.Header>
                             <Card.Body>
-                                <Card.Title>Placeholder Text</Card.Title>
+                                <Card.Title>blueeyes.dev</Card.Title>
                                 <Card.Text className="CardText">
-                                    Placeholder Text
+                                    This website! I bet you can kind of guess what goes here yourself if you've gotten this far!<br/>
+                                    This has been developed in React.JS and uses GitHub pages for hosting. Google Domains is used for domain registration. Google Firebase is used for picture and file storage.<br/>
+                                    Yes, I am aware that I use a lot of Google stuff. Its pretty easy to use and I highly recommend most of it. Great documentation and service!
                                 </Card.Text>
                             </Card.Body>
                         </Card>
                     </Col>
                     <Col lg={4}>
                         <Card>
-                            <Card.Img variant="top" src={DMPSSnap}/>
+                            <Card.Img variant="top" src={bthompsonSnap}/>
                             <Card.Header>
                                 <p className="ProjectsCardHeader">
-                                    <b>Placeholder Text</b>
+                                    <b>Developer and Administrator</b>
                                 </p>
                             </Card.Header>
                             <Card.Body>
-                                <Card.Title>Placeholder Text</Card.Title>
+                                <Card.Title>bthompson.org</Card.Title>
                                 <Card.Text className="CardText">
-                                    Placeholder text
+                                    My first attempt at creating a personal website.<br/>
+                                    This was registered originally through Domain.com, though since it has been transferred to Google Domains. Created through the website builder that is
+                                    provided through Domain.com this website is relatively clean and well done, though customization is limited and difficult to do. Once the domain was
+                                    transferred to Google Domains the ability to modify it was broken. Currently hosted by GitHub Pages and it is my next project to modify and update it.
                                 </Card.Text>
                             </Card.Body>
                         </Card>

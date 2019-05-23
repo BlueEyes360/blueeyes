@@ -14,6 +14,9 @@ import NavigationLinks from './NavigationLinks/NavigationLinks';
 import SocialLinks from './SocialLinks/SocialLinks';
 
 import eye from '../../assets/eye_transBG.png';
+
+import Resume from '../../assets/Bobby_Resume_v3_online.pdf';
+
 import './Navigation.css';
 
 const Navigation = (props) => {
@@ -27,8 +30,10 @@ const Navigation = (props) => {
                         <DropdownItem>
                             <NavLink exact to="/">Home</NavLink>
                         </DropdownItem>
-                        <DropdownItem>
-                            <NavLink to="/resume">Resume</NavLink>
+                        <DropdownItem href={Resume}>
+                            <div style={{color: "white", margin: "0 4.25px"}}>
+                                Resume
+                            </div>
                         </DropdownItem>
                         <DropdownItem>
                             <NavLink to="/gallery">Gallery</NavLink>
